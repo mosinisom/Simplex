@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplex Method</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simplex Method</h1>
+        <div class="input-group">
+            <label for="rows">Количество строк:</label>
+            <input type="number" id="rows" min="1">
+        </div>
+        <div class="input-group">
+            <label for="columns">Количество столбцов:</label>
+            <input type="number" id="columns" min="1">
+        </div>
+        <button id="generate">Создать матрицу</button>
+        <div class="matrix-container">
+            <h2>Матрица 1</h2>
+            <table id="matrix1"></table>
+        </div>
+        <div class="matrix-container">
+            <h2>Матрица 2</h2>
+            <table id="matrix2"></table>
+        </div>
+        <div class="input-group">
+            <label for="raz_row">Разрешающая строка:</label>
+            <input type="number" id="raz_row" min="0">
+        </div>
+        <div class="input-group">
+            <label for="raz_col">Разрешающий столбец:</label>
+            <input type="number" id="raz_col" min="0">
+        </div>
+        <button id="calculate">Рассчитать</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
